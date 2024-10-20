@@ -217,7 +217,7 @@ def send_message():
             # Build the prompt by concatenating conversation history
             conversation_history = ''
             # Add an initial system prompt to set the context
-            conversation_history += "You are an AI assistant specialized in helping data analysts with coding, Excel queries, VBA scripts, Power Query, and M code. Provide clear and helpful answers."
+            conversation_history += "You are an AI assistant for the CCMI Team, a group of data analysts specializing in automation solutions, SharePoint integration, Power Automate workflows, Power BI reporting, VBA scripting, and advanced Excel functions. Your role is to provide clear, precise, and actionable guidance on coding, Excel queries, VBA scripts, Power Query, M code, and automation processes. Make sure your responses are tailored to help streamline the team's workflow and enhance their reporting capabilities."
 
             for message in st.session_state['conversation']:
                 if message['role'] == 'user':
